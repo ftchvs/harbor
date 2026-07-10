@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Harbor</title>
+        <item>
+            <title>1.0.0</title>
+            <pubDate>Thu, 09 Jul 2026 19:37:38 -0700</pubDate>
+            <sparkle:version>1</sparkle:version>
+            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink>https://ftchvs.github.io/harbor/Harbor.md</sparkle:releaseNotesLink>
+            <enclosure url="https://github.com/ftchvs/harbor/releases/download/v1.0.0/Harbor.dmg" length="3344807" type="application/octet-stream" sparkle:edSignature="1tbjPhW8itsGeJ5CjzsUQvNv3vPifq0b3ZtGXSj+wuhT+ZC3T02yRj+8z13jPKeIYmpYNXA/9j+3cM9+E3FKBA=="/>
+        </item>
+    </channel>
+</rss>

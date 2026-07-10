@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Harbor is a native macOS menu-bar app for seeing every localhost dev server, its framework, live vitals, and one-click actions."
+    >
+    <title>Harbor - localhost ports from your Mac menu bar</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Harbor home">
+        <span class="brand-mark" aria-hidden="true">H</span>
+        <span>Harbor</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#features">Features</a>
+        <a href="#trust">Trust</a>
+        <a href="#changelog">Changelog</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">macOS 14+ universal native menu-bar app</p>
+          <h1 id="hero-title">Harbor</h1>
+          <p class="lede">
+            See every localhost server from your menu bar. Harbor detects the
+            framework behind each port, shows live CPU, memory, uptime, and
+            energy impact, then gives you one-click actions when a port needs
+            attention.
+          </p>
+          <div class="download-actions" aria-label="Download Harbor">
+            <a class="button primary" href="https://github.com/ftchvs/harbor/releases/latest/download/Harbor.dmg">
+              Download Harbor.dmg
+            </a>
+            <a class="button secondary" href="https://github.com/ftchvs/harbor/releases/latest/download/Harbor.dmg.sha256">
+              Check SHA256
+            </a>
+          </div>
+          <p class="release-note">
+            Universal native menu-bar app for Apple silicon and Intel Macs.
+            Harbor ships as a signed, notarized DMG for macOS 14+.
+          </p>
+        </div>
+      </section>
+
+      <section id="features" class="section" aria-labelledby="features-title">
+        <div class="section-heading">
+          <p class="eyebrow">Feature overview</p>
+          <h2 id="features-title">Built for the local dev loop.</h2>
+        </div>
+        <div class="feature-grid">
+          <article>
+            <h3>Every listening port</h3>
+            <p>
+              See localhost listeners across IPv4 and IPv6 without running
+              lsof or hunting through terminal tabs.
+            </p>
+          </article>
+          <article>
+            <h3>Framework detection</h3>
+            <p>
+              Identify common dev stacks such as Next.js, Vite, Rails, Django,
+              Postgres, and more from the process behind each port.
+            </p>
+          </article>
+          <article>
+            <h3>Live vitals</h3>
+            <p>
+              Track uptime, CPU, memory, and a quick energy badge so noisy
+              servers stand out before they slow your machine down.
+            </p>
+          </article>
+          <article>
+            <h3>One-click actions</h3>
+            <p>
+              Open the app in your browser, jump to the owning terminal, kill
+              one process, or clear the whole local stack with Kill All.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="trust" class="section split" aria-labelledby="trust-title">
+        <div>
+          <p class="eyebrow">Trust model</p>
+          <h2 id="trust-title">Local-first by design.</h2>
+        </div>
+        <div class="trust-list">
+          <p>
+            <strong>Non-sandboxed for a reason.</strong> Harbor needs to inspect
+            and signal your own local processes to map ports and terminate
+            runaway servers. The app ships outside the Mac App Store as a
+            Developer ID-signed, notarized download.
+          </p>
+          <p>
+            <strong>No telemetry.</strong> Harbor does not collect analytics or
+            send process, port, project, or command data to a service. Inspection
+            happens on your Mac.
+          </p>
+          <p>
+            <strong>Verifiable downloads.</strong> The release DMG is paired
+            with a SHA256 checksum so you can verify the asset you installed.
+          </p>
+        </div>
+      </section>
+
+      <section id="changelog" class="section split" aria-labelledby="changelog-title">
+        <div>
+          <p class="eyebrow">Changelog</p>
+          <h2 id="changelog-title">Current release notes.</h2>
+        </div>
+        <div class="changelog">
+          <h3>Unreleased</h3>
+          <ul>
+            <li>
+              M0-M2 beta lane implemented: native port enumeration, lsof
+              fallback, process vitals, framework detection, panel shell, row
+              actions, browser open, kill and Kill All.
+            </li>
+            <li>
+              Release preflight now validates universal Release builds, DMG
+              creation, and SHA256 checksum generation.
+            </li>
+            <li>
+              Production release is gated on manual GUI QA, Developer ID
+              signing, notarization, Sparkle update validation, and release
+              candidate dogfooding.
+            </li>
+          </ul>
+          <a href="https://github.com/ftchvs/harbor/blob/main/CHANGELOG.md">Read the full changelog</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Harbor is a native reimagining inspired by
+        <a href="https://www.ports-app.com">Ports</a>, a free macOS menu-bar
+        utility for viewing local dev servers. Harbor is an independent
+        implementation and is not affiliated with or endorsed by the Ports
+        project.
+      </p>
+    </footer>
+  </body>
+</html>
