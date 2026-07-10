@@ -83,11 +83,3 @@ Harbor's mark is a mooring bollard with a rope — the thing a harbor actually u
 Read the full launch story on [ftchvs.com](https://www.ftchvs.com/blog/harbor-1-0-release).
 
 <br clear="left">
-
-## Credit
-
-Harbor is a native reimagining inspired by [Ports](https://www.ports-app.com), a free macOS menu-bar utility for viewing local dev servers. Harbor is an independent implementation and is not affiliated with or endorsed by the Ports project.
-
-## License
-
-Harbor is proprietary software, © 2026 Felipe Tavares Chaves. This repository hosts the distribution artifacts — releases, landing page, release notes, and update feed. The source code is not published here. See [LICENSE](LICENSE).
